@@ -1,0 +1,56 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+.titulo-principal{
+    padding-left: 30px;
+}
+
+.titulo-centralizado{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+em b{
+    color: #FF0000;
+}
+
+#mision{
+    font-size: 20px;
+}
+
+#banner {
+    width: 100%;
+}
+
+
+
+.principal{
+    background: #dddddd;
+    padding: 20px;
+}
+
+.diferenciales{
+    background: #ffffff;
+    padding: 30px;
+}
+
+
+.items{
+    font-style: italic;
+}
+
+ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+.imgDiferenciales{
+    width: 50%;
+}
