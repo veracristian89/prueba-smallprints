@@ -8,11 +8,14 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="icon" href="img/splogo.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
             <div class="contenedor">
-                <h1 class="logo"><img src="img/splogo2.png"></h1>
+                <h1 class="logo"><img src="img/splogo2.png" alt="logo smallprints"></h1>
                 <nav>
                     <ul class="">
                         <li><a href="index.html">Home</a></li>
@@ -27,20 +30,72 @@
         <main>
             <form>
                 <label for="nombreapellido">Nombre y Apellido</label>
-                <input type="text" id="nombreapellido">
+                <input type="text" id="nombreapellido" class="input-padron" required>
 
-                <label for="correoelectronico"></label>
-                <input type="text" id="correoelectronico">
+                <label for="correoelectronico">Correo Electronico</label>
+                <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@ejemplo.com">
 
-                <label for="telefono"></label>
-                <input type="text" id="telefono">
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" class="input-padron" required placeholder="(xx) xxxx xxxx">
 
-                <input type="submit" value="Enviar formulario">
+                <label for="mensaje">Mensaje</label>
+                <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
+
+                <fieldset>
+                    <legend>¿Cómo le gustaria que lo contactemos?</legend>
+
+                    <label for="radio-email"><input type="radio"name="contacto" value="email" id="radio-email">Email</label>
+                    
+                    <label for="radio-telefono"><input type="radio"name="contacto" value="telefono" id="radio-telefono">Telefono</label>
+                                    
+                    <label for="radio-whatsapp"><input type="radio"name="contacto" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>¿En cúal horario prefiere ser atendido?</legend>
+                    <select>
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+                </fieldset>
+                
+                <label class="checkbox"><input type="checkbox" checked>¿Le gustaria recibir novedades sobre SmallPrints?</label>
+
+                <input type="submit" value="Enviar formulario" class="btn-enviar">
+
             </form>
+
+            <table>
+               
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>08h - 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Miércoles</td>
+                        <td>08h - 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>08h - 20h</td>
+                    </tr>
+                </tbody>
+               
+            </table>
+
         </main>
 
         <footer>
-            <img src="img/splogo-blanco.png">
+            <img src="img/splogo-blanco.png" alt="logo smallprints">
             <p class="copyright">© Copyright - SmallPrints 2022</p>
         </footer>
     </body>

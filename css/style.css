@@ -1,4 +1,7 @@
 
+body{
+    font-family: 'Roboto', sans-serif;
+}
 
 header {
     background-color: #bbbbbb;
@@ -69,7 +72,7 @@ nav{
 }
 
 .servicios li p{
-    font-size: 18px;
+    font-size: 16px;
 }
 
 footer{
@@ -87,3 +90,116 @@ footer img{
     color: #ffffff;
     font-size: 13px;
 }
+
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form{
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.btn-enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.btn-enviar:hover{
+    background-color: rgb(194, 120, 9);
+    transform: scale(1.1);
+    
+}
+
+table{
+    font-size: 18px;
+    margin: 40px 40px;
+}
+
+thead{
+    background: #555555;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid #000000;
+    padding: 10px 15px;
+}
+
+/*css para el home*/
+
+.banner{
+    width: 100%;
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    font-weight: bold;
+    clear: left;
+}
+
+.principal p{
+    margin: 0 0 1em;
+}
+
+.principal b{
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.impresora {
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.mapa{
+    padding: 3em 0;
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.img-diferenciales{
+    width: 60%;
+    
+}
+
+.video {
+    width: 560px;
+    margin: 1em auto;
+}
+

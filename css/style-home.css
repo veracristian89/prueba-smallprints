@@ -1,6 +1,37 @@
-body{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    
+header {
+    background-color: #bbbbbb;
+    padding: 20px;
+}
+
+.contenedor{
+    width: 940;
+    position: relative;
+    margin: 0 100px auto;
+
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #a8c8ec;
+    text-decoration: underline;
+}
+
+nav{
+    position: absolute;
+    top: 136px;
+    right: 0;
 }
 
 .titulo-principal{
@@ -44,7 +75,7 @@ em b{
     font-style: italic;
 }
 
-ul{
+.diferenciales-ul{
     display: inline-block;
     vertical-align: top;
     width: 20%;
@@ -53,4 +84,20 @@ ul{
 
 .imgDiferenciales{
     width: 50%;
+}
+
+footer{
+    text-align: center;
+    background: url(../img/bg.jpg);
+    padding: 40px;
+}
+
+footer img{
+    height: 200px;
+}
+
+.copyright{
+    margin: 20px;
+    color: #ffffff;
+    font-size: 13px;
 }
