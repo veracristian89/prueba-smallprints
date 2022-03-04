@@ -9,7 +9,7 @@ header {
 }
 
 .contenedor{
-    width: 1080px;
+    width: 940px;
     position: relative;
     margin: 0 auto;
 
@@ -229,8 +229,21 @@ td, th{
     line-height: 1.5;
 }
 
+.items:before{
+    content: "★";
+}
+
 .items:first-child{
     font-weight: bold;
+}
+
+.img-diferenciales{
+    width: 60%;
+    transition: 0.5s;
+    box-shadow: 10px 10px 15px black;
+}
+.img-diferenciales:hover{
+    opacity: 0.5;
 }
 
 .video {
@@ -238,3 +251,36 @@ td, th{
     margin: 1em auto;
 }
 
+@media screen and (max-width:480px) {
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+
+    .contenedor, .principal, .mapa-contenido, .contenedor-diferenciales, .video{
+        width: auto;
+    }
+
+    .lista-diferenciales, .img-diferenciales{
+        width: 100%;
+    }
+    
+    /*responsividad de servicios*/
+
+    .servicios li{
+        display: block;
+    }
+
+    /*responsividad de contacto*/
+
+    form{
+        width: 100%;
+    }
+
+    table{
+        width: 100%
+    };
+}
