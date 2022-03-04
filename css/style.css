@@ -251,7 +251,7 @@ td, th{
     margin: 1em auto;
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:600px) {
     h1{
         text-align: center;
     }
